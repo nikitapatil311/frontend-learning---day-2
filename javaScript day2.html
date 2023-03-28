@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript day2</title>
+</head>
+<body>
+    /* Javascript is one of the most popular languages <br>
+Datatypes in JS 1. Bigint 2. number 3. string 4. boolean 5. object 6. symbol 7. undefined 8. null<br>
+Always end the statements with semicolon (;)<br>
+Variables names can start with _, $, 1-9, a-z, A-Z;<br>
+<br>var, let and const are called as keywords 
+*/
+
+// Assigning values fron one variable to another
+<p id="demo"></p>
+
+//<br>Srting Variables - Strings can be written with single or double quotes.<br> if you do arethematic operation with + operator you get NAN <br> if you do concatination then you get undefined.
+//<br> CASE SENSITIVE<br> In javascript variables and functions are case sensitive MYVAR is not same as myvar.<br>
+//<br>best practice is to write with camel case letters 1. myVariable 2. myLastVariable 3. myThirdLastVariable.
+//<br> var we can redeclare a variable, doesnot have a block scope
+<p id="demo1"></p>
+
+//<br> let - has a block scope.
+<p id="demo2"></p>
+
+//<br> const keyword - variables declared with const are readonly, we cannot reassign const variables<br>
+//<br> we use uppercase for immutable (not changeable) and lowercase for changeable.<br>
+//<br> const is immutable and var,let are mutable. <br> const ABC = "hello";<br>
+<p id="demo3"></p>
+
+//<br> Add two numbers with javascript. a + b, a - b, a * b, a / b, a % b.
+//<br> ESCAPING LITERAL QUOTES <br> "i am \"double quote\" and \"double quotes\" 
+//<br> good practice "he said, let\'s talk tomorrow"
+
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+//<br> saving <a> tag various attributes, '<a> href = "https://example.com" target = "_blank"</a>'
+    <p id="demo6"></p>
+    //<br> ESCAPE SEQUENCE IN STRING<br> 1. \'' - single quote  2. \"" - double quote. 3. \t - tab  4. \n - new line 5. \b - boundry 6. \f - form \r - remove<br>
+    //<br> CONCATINATING STRINGS WITH + operator<br>
+    //<br> you should have a single spaced character.<br> let STR3 = "hi "; STR3 += "hello";<br>
+
+
+    <p id="demo7"></p>
+
+    //<br> constructing string with variable <br> const STR4 = "Nikita"; const STR5 = "i am " + STR4 ; <br>
+
+    <p id="demo8"></p>
+
+    //<br> APPENDING VARIABLE TO STRING +=,  const STR6 = "Hello "; let STR7 = "Hi "; STR7 += STR6;<br>
+
+    <p id="demo9"></p>
+
+    //<br> LENGTH OF STRING<br>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+
+    /*<br>let lastName = 0;<br>
+    const STR8 = "hiiiiiiiii";<br>
+    lastName = STR8[0];<br>
+    document.getElementById("demo10").innerHTML = STR8.length;<br>*/
+    //<br> string values are immutable, you can reassign the value<br> 
+
+    <p id="demo12"></p>
+    //<br> let myStr = "Bob"; myStr = "Job";<br>
+
+    //<br> Multidimentional array - nesting an array inside an array <br> [[1,2,3],[4,5,6],[7,8,9]];<br>
+    //<br> ARRAY METHODS - push() - will push the data at end of an array <br>,
+    <br>pop() - will remove the last element in an array <br>, 
+    <br> shift() - will remove the first element in an array <br>, 
+    <br>unshift() - add the element to the first position in an array.<br>
+    <br>//pop() - 9 is removed<br>
+
+     <p id="demo13"></p> 
+
+     //push(12) - 12 is added in last index
+     <p id="demo14"></p>
+
+     //shift() - first element 1 is removed, 
+     <p id="demo15"></p>
+
+     //unshift("hi") - hi is added in the first index.
+     <p id="demo16"></p>
+
+     //<br> GLOBAL AND LOCAL SCOPE. <br> global and local variables names can be same <br> local variable take precedence over global variable.<br>
+     //<br> functions - we can reuse the code so we write functions.<br>
+     //<br> PASS BY VALUE - we pass the value directly as an argument.<br>
+     //<br> STAND IN LINE - In a line items are added at the end of the queue and old items are removed infront of the queue.<br>
+     //<br> Boolean - true - on, false - off.<br>
+
+
+
+
+
+
+
+
+
+    <script>
+        let a;
+        a=10;
+        let b;
+        b=a;
+    document.getElementById("demo").innerHTML = b;
+
+    var c ="10";
+    c="20";
+    document.getElementById("demo1").innerHTML = c;
+
+    let d ="hi";
+    d="Hello";
+    document.getElementById("demo2").innerHTML = d;
+
+     const ABC = "hello";
+     document.getElementById("demo3").innerHTML = ABC;
+
+     const STR = "i am \"double quote\" and \"double quotes\"" ; 
+     const STR1 = "he said, let\'s talk tomorrow";
+     document.getElementById("demo4").innerHTML = STR;
+     document.getElementById("demo5").innerHTML = STR1;
+
+     const MYSTR = '<a> href = "https://example.com" target = "_blank"</a>';
+     document.getElementById("demo6").innerHTML = MYSTR;
+
+     let STR3 = "hi ";
+      STR3 += "hello";
+      document.getElementById("demo7").innerHTML = STR3;
+
+      const STR4 = "Nikita";
+      const STR5 = "i am " + STR4 ; 
+      document.getElementById("demo8").innerHTML = STR5;
+
+        const STR6 = "Hello ";
+      let STR7 = "Hi ";
+      STR7 += STR6;
+      document.getElementById("demo9").innerHTML = STR7;
+
+      let lastName = 0;
+      const STR8 = "hiiiiiiiii";
+      lastName = STR8[0];
+      document.getElementById("demo10").innerHTML = STR8.length;
+      document.getElementById("demo11").innerHTML = lastName;
+
+      let myStr = "Bob";
+      myStr = "Job";
+      document.getElementById("demo12").innerHTML = myStr;
+
+      const ARR = [1,2,3,4,5,6,7,8,9];
+      ARR.pop(); 
+      document.getElementById("demo13").innerHTML = ARR;
+      ARR.push(12);
+      document.getElementById("demo14").innerHTML = ARR;
+      ARR.shift();
+      document.getElementById("demo15").innerHTML = ARR;
+      ARR.unshift("hi");
+      document.getElementById("demo16").innerHTML = ARR;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
